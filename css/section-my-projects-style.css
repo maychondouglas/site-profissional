@@ -1,0 +1,53 @@
+/*
+    @author: Maychon Douglas
+    Folha de Estilos
+    Autor: Maychon Douglas
+    @maychondouglas
+    06/11/2020
+*/
+
+.project{
+  margin-top: 1rem;
+  
+}
+.project a{
+  overflow: hidden;
+  
+  display: flex;
+  justify-content: center;
+  
+  
+}
+.project .project-title{
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  color: var(--secondary-color);
+  transition: ease-in-out 0.3s;
+}
+.project:hover  > .project-title{
+  color: var(--primary-color);
+}
+
+.project a img{
+  border-radius: 7px;
+  opacity: 0;
+  width: 20%;
+  height: 0;
+  justify-self: center;
+  
+  transition: 0.2s ease-in-out;
+}
+
+
+@media(max-width: 900px){
+
+    .project{
+      margin: 1rem 0;
+    }
+    
+    .project-title h4{
+      max-width: 90%;
+      text-align: left;
+    }
+}

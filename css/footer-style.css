@@ -1,0 +1,28 @@
+/*
+    Meu Site de Portfólio
+    Folha de Estilos
+    Autor: Maychon Douglas
+    @maychondouglas
+    06/11/2020
+*/
+
+
+footer{
+    background-color: var(--primary-color);
+    height: 15vh;
+    color: var(--terceary-color) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--quartenary-color);
+}
+
+
+
+@media(max-width: 900px){
+
+    footer{
+        text-align: center;
+    }
+
+}

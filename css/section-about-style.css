@@ -1,0 +1,50 @@
+/*
+    Meu Site de Portfólio
+    Folha de Estilos
+    Autor: Maychon Douglas
+    @maychondouglas
+    06/11/2020
+*/
+
+.about-section{
+    background-color: #fff;
+}
+section .container{
+    padding: 5rem 0;
+}
+.about-section .container{
+
+    color: var(--sixth-color);
+}
+.about-section .container p{
+    margin-bottom: 1rem;
+}
+.section-identifier{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+.section-extern .content{
+    background-color: #fff;
+    height: auto;
+    padding: 2rem;
+    width: 80%;
+    text-align: justify;
+    margin: 0 auto;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.12);
+    box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.12);
+    position: relative;
+}
+
+@media(max-width: 900px){
+   
+    section .container, .section-extern .container, footer{
+        padding: 3rem 3rem;
+        position: relative;
+    }
+    .section-extern .content{
+        width: 100%;
+    }
+}

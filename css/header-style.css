@@ -1,0 +1,184 @@
+/*
+    Meu Site de Portfólio
+    Folha de Estilos
+    Autor: Maychon Douglas
+    @maychondouglas
+    06/11/2020
+*/
+.top-bar{
+  height: 10%;
+  align-items: end;
+}
+.top-bar a{
+    text-decoration: none;
+    transition: ease-in-out 0.3s;
+}
+header a:hover{
+    color: #fff;
+}
+header{
+    background-image: url('../img/background.jpg');
+    background-position: top;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+    height: 100vh;
+    color: var(--quartenary-color);
+}
+header::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 1;
+    background-color: #000;
+    opacity: 0.6 ;
+}
+.top-bar{
+    height: 10%;
+    align-items: end;
+}
+nav, .presentation-page{
+    position: relative;
+    z-index: 3;
+}
+.my-name{
+    color: var(--quartenary-color);
+    font-weight: 600;
+}
+.main-menu{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    position: initial;
+}
+.main-menu li{
+    margin-left: 0.5rem;
+}
+.main-menu li a{
+    text-decoration: none;
+    padding: 0.5rem;
+    color: var(--quartenary-color);
+}
+/*Menu Mobile*/
+#check {
+    position: absolute;
+    z-index: 1000000000000;
+    display: none;
+}
+.menu-mobile-botao{
+    height: 45px;
+    width: 45px;
+    border: solid var(--quartenary-color) 2px;
+    border-radius: 3px;
+    display: none;
+}
+.menu-mobile-botao label {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: all .2s linear;
+}
+.menu-mobile-botao span {
+    width: 25px;
+    height: 2px;
+    top: 20px;
+    left: 7px;
+    position: absolute;
+    background-color: var(--quartenary-color);
+    transition: all .2s linear;
+}
+.menu-mobile-botao span:before {
+    content: '';
+    width: 25px;
+    height: 2px;
+    bottom: -10px;
+    position: absolute;
+    background-color: var(--quartenary-color);
+    transition: all .2s linear;
+}
+.menu-mobile-botao span:after {
+    content: '';
+    width: 25px;
+    height: 2px;
+    top: -10px;
+    position: absolute;
+    background-color: var(--quartenary-color);
+    transition: all .2s linear;
+}
+
+@media(max-width: 900px){
+    
+      
+    .my-name{
+        line-height: 45px;
+    }
+    /*Menu Mobile*/
+    .top-bar{
+        position: fixed;
+        display: flex;
+        justify-content: space-between;
+        height: 80px;
+        z-index: 1000;
+        width: 100%;
+        transition: ease-in-out 0.3s;
+    }
+    .top-bar-scroll{
+        background-color: var(--secondary-color);
+    }
+    .menu-mobile-botao{
+        transition: 0.30s ease-in-out;
+        right: 3rem;
+    }
+    .main-menu{
+        position: absolute;
+        right: -50%;
+        top: 0;
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        background-color: var(--primary-color);
+        height: 100vh;
+        width: 50%;
+        transition: ease-in-out 0.3s;
+    }
+    .main-menu li{
+        margin: 2rem;
+    }
+    .botao-menu-deslizado{
+        background-color: var(--fifth-color);
+        padding-left: 0;
+        right: 0;
+        margin-right: 50% ;
+        border-radius:  100px 0rem  0rem 100px ;
+    }
+    .menu-mobile-botao {
+        display: block;
+    }
+    .fechar-menu-mobile{
+        display: flex;
+        color: var(--clean-color);
+        height: 10%;
+        width: auto;
+        justify-content: flex-end;
+        cursor: pointer;
+    }
+    #check:checked ~ label span{
+        background-color: transparent;
+    }
+    #check:checked ~ label span:before{
+        transform: translate(0px, -10px) rotate(-45deg);
+    }
+    #check:checked ~ label span::after{
+        transform: translate(0px, 10px) rotate(45deg);
+    }
+    #check:checked ~ label{
+        border-radius: 100px;
+    }
+    #check:checked ~ .menu{
+        margin-right: 0;
+    }
+    #check:blank ~ .menu{
+        margin-right: -10%;
+    }
+}
