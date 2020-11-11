@@ -85,7 +85,9 @@ h4{
         padding: 3rem 3rem;
         position: relative;
     }
-    
+    .section-extern .content{
+      width: 100%;
+    }
     .user-github{
         display: flex;
         flex-direction: column;

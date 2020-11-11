@@ -128,6 +128,7 @@
   font-size: 1.5rem;
   margin: 0.5rem 0;
   position: relative;
+  padding: 0 0.5rem;
   z-index: 15;
 }
 
@@ -136,6 +137,7 @@
   font-weight: 100;
   color: #666666;
   line-height: 1.3rem;
+  padding: 0 0.5rem;
   position: relative;
   z-index: 150;
   font-family: 'Barlow Condensed', sans-serif;
@@ -150,7 +152,7 @@
   
   }
 }
-@media(max-width: 600px){
+@media(max-width: 450px){
   .container-projects{
 
     columns: 1;
